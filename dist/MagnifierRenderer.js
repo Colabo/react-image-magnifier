@@ -28,7 +28,7 @@ var MagnifierRenderer = function MagnifierRenderer(props) {
       onImageLoad = props.onImageLoad,
       onLargeImageLoad = props.onLargeImageLoad,
       onLoadRefresh = props.onLoadRefresh;
-  var legalSize = itemDimensions.width >= elementDimensions.width;
+  var legalSize = true;//itemDimensions.width >= elementDimensions.width;
   var isActive = legalSize && active;
   var finalCursorStyle = !legalSize ? "default" : active ? cursorStyleActive : cursorStyle;
   return /*#__PURE__*/_react["default"].createElement("div", {
